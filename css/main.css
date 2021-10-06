@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 960px) {
+  body .tablet-version {
+    display: block;
+  }
+  body .smartphone-version, body .web-version {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body .tablet-version, body .web-version {
+    display: none;
+  }
+  body .smartphone-version {
+    display: block;
+  }
+  body p {
+    clear: both;
+  }
+  body .card-menu {
+    width: 134px;
+    height: 106px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+h1 {
+  color: #4b4b4b;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+}
+
+p {
+  color: #2e2e2e;
+  font-size: 14px;
+  text-align: left;
+  line-height: 18px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  position: position-fixed;
+  background-color: #dddddd;
+  height: 44px;
+  margin: 5px;
+  width: 100%;
+}
+
+.show-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.containers {
+  text-align: left;
+  padding: 32px;
+}
+
+.containers .container {
+  padding: 0;
+}
+
+.card-menu {
+  background: #dddddd;
+  color: #192aff;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 1;
+  width: 148px;
+  height: 106px;
+  margin-right: 27px;
+  margin-bottom: 29px;
+  padding-top: 25px;
+}
+
+.card-menu p {
+  color: #192aff;
+  text-align: center;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar {
+  background-color: #dddddd;
+  height: 44px;
+  margin: 5px;
+  width: 100%;
+}
+
+.navbar a {
+  background-image: url(../img/Icon-material-chevron-right.svg);
+  background-repeat: no-repeat;
+  background-position: 60px 16px;
+  color: #192aff;
+}
+
+.hide-menu {
+  display: none;
+}
+
+.show-menu {
+  display: block;
+}
+
+.tablet-version {
+  display: none;
+}
+
+.smartphone-version {
+  display: none;
+}
+
+.web-version {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */

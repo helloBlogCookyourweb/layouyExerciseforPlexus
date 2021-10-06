@@ -1,0 +1,158 @@
+@import "_colours.scss";
+@import "_mixins.scss";
+@import "_font.scss";
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+
+  @include respond(tablet) {
+    // responsive code for tablet viewport i.e. 960px
+     .tablet-version {
+       display: block;
+     }
+     .smartphone-version, .web-version {
+       display: none;
+     }
+  }
+
+  @include respond(mobile) {
+   
+    // responsive code for mobile viewport i.e. 375px
+    
+      .tablet-version, .web-version {
+        display: none;
+      }
+     .smartphone-version {
+       display: block;
+     }
+      p {
+
+        clear: both;
+      }
+      .card-menu {
+
+        width: 134px;
+        height: 106px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+      }
+
+  }
+}
+
+h1 {
+  color: $colour-h1;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+}
+
+p {
+  color: $colour-p;
+  font-size: 14px;
+  text-align: left;
+  line-height: 18px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  position: position-fixed;
+  background-color: $colour-secondary;
+  height: 44px;
+  margin: 5px;
+  width: 100%;
+}
+
+.show-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.containers {
+  text-align: left;
+  padding: 32px;
+
+  .container {
+    padding: 0;
+  }
+}
+
+.card-menu {
+  background: $colour-secondary;
+  color: $colour-primary;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 1;
+  width: 148px;
+  height: 106px;
+  margin-right: 27px;
+  margin-bottom: 29px;
+  padding-top: 25px;
+
+  p {
+    color: $colour-primary;
+    text-align: center;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  background-color: $colour-secondary;
+  height: 44px;
+  margin: 5px;
+  width: 100%;
+}
+
+.navbar a {
+  background-image: url(../img/Icon-material-chevron-right.svg);
+  background-repeat: no-repeat;
+  background-position: 60px 16px;
+  color: $colour-primary;
+}
+
+.hide-menu {
+  display: none;
+}
+
+.show-menu {
+  display: block;
+}
+
+.tablet-version {
+  display: none;
+}
+
+.smartphone-version {
+  display: none;
+}
+
+.web-version {
+  display: block;
+}

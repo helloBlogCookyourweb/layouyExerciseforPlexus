@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Plexus Layout Xd to Html</title>
+      <link rel="stylesheet" href="css/main.css">
+   </head>
+   <body>
+      <div class="containers">
+      <header>
+         <nav class="navbar" >
+            <a href="#" class="menu" id="menu">Open </a>
+            <ul class="hide-menu">
+               <li>1 menu list</li>
+               <li>2 menu list</li>
+            </ul>
+         </nav>
+      </header>
+      <section>
+         <h1 class="web-version"> Web version</h1>
+         <h1 class="tablet-version"> Tablet version</h1>
+         <h1 class="smartphone-version">Smartphone  version</h1>
+      </section>
+      <div class="container">
+         <ul>
+            <li class="card-menu">
+               <img src="img/Icon-feather-home.svg" alt="Home icon">
+               <p>Home</p>
+            </li>
+            <li class="card-menu">
+               <img src="img/Icon-feather-shopping-cart.svg" alt="Shopping cart icon">
+               <p>Cart</p>
+            </li>
+            <li class="card-menu">
+               <img src="img/Icon-feather-gift.svg" alt="Gift icon icon">
+               <p>Product</p>
+            </li>
+         </ul>
+         <div class="container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cum ullam, corporis mollitia ipsum suscipit quo voluptatem possimus consectetur perferendis natus harum quis nulla voluptates ad iste nobis aliquam ipsa?</p>
+         </div>
+      </div>
+      <script>
+         const openMenu = document.getElementById('menu')
+         openMenu.addEventListener('click',()=>{
+          console.log("open menu")
+            
+         })
+      </script>
+   </body>
+</html>
